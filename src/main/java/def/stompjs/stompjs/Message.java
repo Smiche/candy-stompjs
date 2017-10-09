@@ -21,7 +21,7 @@ public class Message extends def.js.Object {
     @jsweet.lang.Optional
     public def.js.Function nack;
     
-    public Map<String, String> getHeadersAsStrings(){
+    public native Map<String, String> getHeadersAsStrings()/*-{
     	Map<String, String> map = new Map<String, String>();
     	
     	if(this.headers == null) {
@@ -33,6 +33,6 @@ public class Message extends def.js.Object {
     	}
     	
     	return map;
-    }
+    }-*/;
 }
 
