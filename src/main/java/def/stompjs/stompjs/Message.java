@@ -10,7 +10,7 @@ public class Message extends def.js.Object {
 
     //TODO: change to Map<String,String> somehow
     @jsweet.lang.Optional
-    public def.js.Object headers;
+    public Map<String, String> headers;
 
     @jsweet.lang.Optional
     public String body;
@@ -20,19 +20,5 @@ public class Message extends def.js.Object {
 
     @jsweet.lang.Optional
     public def.js.Function nack;
-    
-    public native Map<String, String> getHeadersAsStrings()/*-{
-    	Map<String, String> map = new Map<String, String>();
-    	
-    	if(this.headers == null) {
-    		return null;
-    	}
-    		
-    	for(def.js.String key : def.js.Object.keys(this.headers)) {
-    		map.set(key.toString(), this.headers.$get(key));
-    	}
-    	
-    	return map;
-    }-*/;
 }
 
