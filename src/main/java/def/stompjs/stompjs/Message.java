@@ -1,4 +1,5 @@
 package def.stompjs.stompjs;
+
 public class Message extends def.js.Object {
     public Message(){}
     
@@ -7,7 +8,7 @@ public class Message extends def.js.Object {
 
     //TODO: change to Map<String,String> somehow
     @jsweet.lang.Optional
-    public Object headers;
+    public def.js.Object headers;
 
     @jsweet.lang.Optional
     public String body;
