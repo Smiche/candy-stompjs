@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>org.jsweet</groupId>
 			<artifactId>jsweet-core</artifactId>
-			<version>6-SNAPSHOT</version>
+			<version>5-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
@@ -192,18 +192,17 @@
 
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>observis</id>
-			<name>Internal Snapshots</name>
-			<url>http://192.168.2.8:8081/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>observis</id>
-			<name>Internal Releases</name>
-			<url>http://192.168.2.8:8081/nexus/content/repositories/releases</url>
+			<id>jsweet-release</id>
+			<name>libs-release</name>
+			<url>http://repository.jsweet.org/artifactory/libs-release-local</url>
 		</repository>
+		<snapshotRepository>
+			<id>jsweet-snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://repository.jsweet.org/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
-
 	<organization>
 		<name>JSweet</name>
 		<url>http://www.jsweet.org</url>
